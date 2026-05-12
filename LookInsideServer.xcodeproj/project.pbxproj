@@ -8,7 +8,16 @@
 
 /* Begin PBXFileReference section */
 		27AC11972FB375BC00700C15 /* LookInsideServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LookInsideServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27AC11CB2FB37E5700700C15 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		27AC11CD2FB37E5700700C15 /* Scripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		27AC11942FB375BC00700C15 /* Frameworks */ = {
@@ -24,6 +33,8 @@
 		27AC118D2FB375BC00700C15 = {
 			isa = PBXGroup;
 			children = (
+				27AC11CB2FB37E5700700C15 /* README.md */,
+				27AC11CD2FB37E5700700C15 /* Scripts */,
 				27AC11982FB375BC00700C15 /* Products */,
 			);
 			sourceTree = "<group>";
