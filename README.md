@@ -3,6 +3,21 @@
 `LookInsideServer.xcodeproj` is a small integration project for apps that want
 LookInside available in debug builds without adding any source code.
 
+## Background
+
+LookInsideServer is a debug-only runtime. CocoaPods can model that cleanly in a
+podspec by applying Debug-only build settings, so CocoaPods consumers do not need
+this project.
+
+Swift Package Manager has a different limitation: it can apply some build
+settings conditionally by configuration, but it cannot make a target dependency
+exist only for Debug and disappear for Release. A binary framework added through
+SPM therefore remains part of the target dependency graph in Release as well.
+
+This project exists as a lightweight Xcode-native workaround for that gap. Apps
+depend on one stable `LookInsideServer.framework` product from this project. The
+project then decides what that product contains for each build configuration.
+
 The project always exposes a single framework product:
 
 ```text
