@@ -81,3 +81,7 @@ the downloaded zip.
 
 If the app launches but LookInside cannot connect, confirm that the app target
 embeds `LookInsideServer.framework` and that the build configuration is Debug.
+
+## Sponsor
+
+This project is sponsored by [AirBuild](https://air.build/).
